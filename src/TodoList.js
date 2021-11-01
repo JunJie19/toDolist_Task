@@ -55,7 +55,7 @@ function TodoList() {
                     <Button variant="secondary" type='submit'>Submit</Button>
                 </form>
                 <div className='TodoList_Table'>
-                    <h5>To Do List. You have () Left. Keep it up. </h5>
+                    <h5>To Do List. You have {todoData.length} Left. {todoData.length < 1 ? <span>Keep it up </span> : <span>Well Done, You have no more Task for Today!</span>} </h5>
                     <hr />
                     <ul>
                         {todoData.map((val, index) => {
