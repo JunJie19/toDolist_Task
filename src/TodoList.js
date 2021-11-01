@@ -18,7 +18,7 @@ function TodoList() {
                 settodoData(response.data.data)
             }
         })
-    }, [todoData])
+    }, [])
 
 
     const submitHandler = () => {
