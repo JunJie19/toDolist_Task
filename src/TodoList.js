@@ -42,6 +42,7 @@ function TodoList() {
                 settodoData(todoData.filter((val) => {
                     return val._id != id ? { _id: id, Task: val.Task } : val
                 }))
+                window.location.reload()
             }
         })
     }
